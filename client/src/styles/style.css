@@ -1,0 +1,395 @@
+/* style.css */
+body {
+    font-family: 'Arial';
+    margin: 0;
+    background-color: #f4eff7;
+    display: flex;
+    flex-direction: column; 
+}
+
+header {
+    background-color: #6a0dad;
+    color: #f4eff7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+h1,h2{color: #6a0dad;}
+
+header .logo img { height: 30px; }
+
+header .logo {
+    font-family: 'Comic Neue',cursive;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: yellow;
+}
+ 
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+    
+.top {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    margin-bottom: 10px;
+}
+    
+nav .logIn-link {
+    margin-left: auto; 
+    list-style: none;
+    margin: 5px 0px 0px 0px;
+    padding: 0;
+}
+    
+nav ul.bottom-links {
+    display: flex;
+    list-style: none;
+    margin: 5px 0px 5px;
+    padding: 0;
+    width: 100%;
+}
+    
+nav li {
+    margin-right: 20px;
+    border-left-color: #f4eff7;
+    border-left-width: 2px;
+    border-left-style: dotted;
+}
+    
+nav a {
+    color: #ffff;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+    
+button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px #b386d3;
+}
+
+button:hover , header nav a:hover{
+    background-color: #9b59b6; 
+    color:yellow;
+}
+
+.img-button{ height: 20px; }
+
+main { padding: 20px; }
+
+footer {
+    background-color: #6a0dad;
+    color: yellow;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+
+
+/* SETS WSPOLNE */
+.box {
+    display: flex;
+    gap: 150px;
+    width: 100%; 
+    align-items: flex-start;
+}
+
+.sets-list {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sets-list-personal {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 100%; 
+    max-width: 600px;
+}
+.set-personal{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between; /* do bokow granic */
+    align-items: center; 
+    text-align: center;
+    width: 100%; 
+    max-width: 600px;
+    box-shadow: 0px 4px 4px #b386d3;
+}
+
+.set {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px 30px; 
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 770px; 
+    box-shadow: 0px 4px 4px #b386d3;
+    gap:50px;
+}
+
+.set .score {
+    font-weight: bold;
+    color: #6a0dad;
+    background-color: #f4eff7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: left; 
+}
+.scoress {
+    font-weight: bold;
+    color: #6a0dad;
+    background-color: #f4eff7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+
+
+/* HOME PAGE */
+.baner {
+    text-align: center;
+    background-color: #e3bbff;
+    padding: 30px 10px;
+    border-radius: 8px;
+    margin: 0px 30px 30px 30px;
+}
+
+.public {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
+    height: 100%;
+    padding: 10px 10px;  
+}
+
+.filters {
+    flex: 2;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 4px #b386d3;
+    max-width: 300px;
+    margin-left: 30px;
+}
+
+.filters h3 {
+    margin-bottom: 20px;
+    color: #6a0dad;
+}
+
+.filters form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filters label {
+    font-weight: bold;
+    color: #6a0dad;
+}
+
+.filters select,.filters input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+
+/* PROFILE */
+.info h1,h2{ text-align: left !important;}
+
+
+
+/* ADMIN */
+.admin-panel {
+    padding: 20px;
+    background-color: #f4eff7;
+}
+.admin-panel h1 , h2 {
+    color: #6a0dad;
+    text-align: center;
+}
+
+
+
+/* TWORZENIE SETU */
+.create-set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    padding: 39px 35px;
+    background-image: url('../../public/images/log.png');
+    background-repeat: repeat; /* zapetlenie loga zeby taki baner powstal */
+    background-position: -123px 0; 
+    background-size: 100px 100px;
+}
+
+.create-set div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 4px #b386d3;
+}
+
+.create-set form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.create-set label {
+    text-align: left;
+}
+
+.create-set input,.create-set select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+/* STUDY */
+.hidden {
+    visibility: hidden; /* Hide the element */
+
+}
+.hidden_menue {
+    display: none;
+}
+.flashcard {
+    box-shadow: 0px 4px 4px #b386d3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    margin: 20px  auto; 
+    padding: 25px; 
+    border-radius: 12px; 
+    max-width: 300px; 
+    background-color: #fff;
+}
+
+#learned-button,#navigation{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.save-score{
+    margin-top: 15px;
+}
+
+/* EDIT */
+.add-word {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 4px 4px #b386d3;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.add-word h3 { color: #6a0dad;}
+
+.add-word form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.add-word label { text-align: left;}
+
+.add-word input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90%;
+}
+
+.words-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* uklada sie w 4 kolumny */
+    gap: 10px;
+}
+
+.words-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px #b386d3;
+    max-width: 400px;
+}
+
+.words-list li span {
+    font-weight: bold;
+    color: #6a0dad;
+}
+.pagination button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #b386d3;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #ddd;
+}
+
+.pagination{
+    margin-left: 30px;
+}
