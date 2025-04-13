@@ -17,7 +17,7 @@ const HomePage = () => {
 
   //paginacje dodalam
   const [currentPage, setCurrentPage] = useState(1);
-  const setsPerPage = 3;
+  const setsPerPage = 5;
 
   useEffect(() => {
     const token = localStorage.getItem('token');
